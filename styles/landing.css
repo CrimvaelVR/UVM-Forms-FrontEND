@@ -1,3 +1,7 @@
+body {
+    background-color: #f2f2f2;
+}
+
 header {
     background-color: #F4F9F4;
     box-shadow: 0 1px 5px 0 #d8d8d8;
@@ -32,6 +36,12 @@ header {
     width: 100%;
 }
 
+.thing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 a {
     text-decoration: none;
 }
@@ -41,16 +51,23 @@ a {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    height: 90px;
 }
 
 .registerButton, .loginButton {
     padding: 20px 0;
     border-radius: 5px;
     width: 220px;
-    height: 90px;
+    height: 100%;
     font-size: 2.5rem;
     text-align: center;
     box-sizing: border-box;
+}
+
+#icon{
+    color: #5C8D89;
+    font-size: 100px;
+    border-color: #5C8D89;
 }
 
 .registerButton {
