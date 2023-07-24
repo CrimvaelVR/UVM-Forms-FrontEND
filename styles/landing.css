@@ -1,0 +1,64 @@
+header {
+    background-color: #F4F9F4;
+    box-shadow: 0 1px 5px 0 #d8d8d8;
+    padding: 20px;
+}
+
+.info {
+    height: 70dvh;
+    display: flex;
+    flex-direction: column;
+}
+
+.imageInfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    width: 100%;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+    gap: 20px;
+}
+
+.list {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.registerButton, .loginButton {
+    padding: 20px 0;
+    border-radius: 5px;
+    width: 220px;
+    height: 90px;
+    font-size: 2.5rem;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.registerButton {
+    background-color: #5C8D89;
+    color: white;
+}
+
+.loginButton {
+    border: 2px solid #5C8D89;
+    color: #5C8D89;
+}
