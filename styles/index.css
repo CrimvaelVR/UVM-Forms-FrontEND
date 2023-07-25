@@ -10,10 +10,17 @@ header {
     display: flex;
     align-items: center;
     gap: 5px;
+    font-size: 1.5rem;
 }
 
 main {
     padding: 20px 40px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .createButton {
@@ -26,14 +33,21 @@ main {
     cursor: pointer;
 }
 
+.formsText {
+    margin: 20px 0;
+    padding-top: 15px;
+    font: bold 2.5rem Calibri;
+    border-top: 2px solid #5C8D89;
+    color: #5C8D89;
+}
+
 .forms {
-    margin-top: 20px;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 20px;
-    background-color: #A7D7C5;
+    background-color: #5C8D89;
     border-radius: 5px;
 }
 
@@ -43,5 +57,6 @@ main {
     border-radius: 10px;
     font-size: 2rem;
     width: 25%;
-    box-shadow: 1px 1px 5px 1px #a0a0a0;
+    box-shadow: 1px 1px 5px 1px #686868;
+    border-top: 10px solid #74B49B;
 }
