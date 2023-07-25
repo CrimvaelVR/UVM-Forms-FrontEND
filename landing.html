@@ -6,25 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UVM Forms</title>
     <link rel="shortcut icon" href="">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="landing.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/landing.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <header>
         <h1>UVM Forms</h1>
-        <!-- MODO OSCURO -->
     </header>
     <main>
-        <section>
-            <p>¡Crea y responde formularios de forma dinámica!</p>
-        </section>
-        <section>
-            <a href="register.html">Regístrate</a>
-            <a href="login.html">Inicia sesión</a> 
+        <section class="info">
+            <div class="panel">
+                <div class="textInfo">
+                    <p>¡Crea y responde formularios de forma dinámica!</p>
+                </div> 
+                <div class="features">
+                    <p>Descubre todo lo que puedes hacer</p>
+                    <ul class="list">
+                        <li class="thing"><i class='bx bx-brain bx-border-circle' id="icon"></i>CREA</li>
+                        <li class="thing"><i class='bx bx-spreadsheet bx-border-circle' id="icon"></i>LEE</li>
+                        <li class="thing"><i class='bx bx-edit-alt bx-border-circle' id="icon"></i>RESPONDE</li>
+                    </ul>
+                </div>
+                <div class="buttons">
+                    <a href="register.html"><button class="registerButton">Regístrate</button></a>
+                    <a href="login.html"><button class="loginButton">Inicia sesión</button></a>
+                </div>
+            </div>
+            <div class="image">
+                <p>example</p>
+            </div>
         </section>
     </main>
     <footer>
         <p>Contacto</p>
     </footer>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
 </body>
 </html>
