@@ -1,64 +1,73 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UVM Forms</title>
-    <link rel="shortcut icon" href="">
-    <link rel="stylesheet" href="styles/styles.css">
-	<link rel="stylesheet" href="styles/register.css">
-</head>
+    <title>Registro</title>
+	<link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/register.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
 <body>
-
-	<div class="form">
-		<div class="title-div">
-			<h1>Proyecto FRONTEND</h1>
-			<p>Registro inicial de los usuarios</p>
-			<p class="required">*Required</p>
+  <div class="container">
+    <div class="title">Registro</div>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Nombre Completo</span>
+            <input type="text" placeholder="Ingrese su nombre" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Username</span>
+            <input type="text" placeholder="Ingrese su username" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="email" placeholder="Ingrese su email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Numero Telefonico</span>
+            <input type="text" placeholder="Ingrese su numero telefonico" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Contraseña</span>
+            <input type="password" placeholder="Ingrese su contraseña" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Confirme su contraseña</span>
+            <input type="password" placeholder="Confirme su contraseña" required>
+          </div>
+        </div>
+        <div class="gender-details">
+          <input type="radio" name="gender" id="dot-1">
+          <input type="radio" name="gender" id="dot-2">
+          <input type="radio" name="gender" id="dot-3">
+          <span class="gender-title">Genero</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Masculino</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Femenino</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span class="gender">Prefiero no decirlo</span>
+            </label>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+		<div class="button">
+			<a href="landing.html">Regresar</a>
 		</div>
-
-		<div class="name-div">
-			<div class="name">Ingresa tu nombre <span class="required">*</span></div>
-			<div class="input-div"><input type="input" name="name" placeholder="Nombre completo"></div>
-		</div>
-
-		<div class="college-div">
-			<div class="name">Ingrese su numero telefonico <span class="required">*</span></div>
-			<div class="input-div"><input type="number" name="tlf" placeholder="Telefono"></div>
-		</div>
-
-		<div class="gmail-div">
-			<div class="name">Ingrese su email <span class="required">*</span></div>
-			<div class="input-div"><input type="email" name="email" placeholder="Su email"></div>
-		</div>
-
-		<div class="mobile-div">
-			<div class="name">Ingrese su edad <span class="required">*</span></div>
-			<div class="input-div"><input type="input" name="answer" placeholder="Su edad"></div>
-		</div>
-
-        <div class="mobile-div">
-			<div class="name">Ingrese la fecha<span class="required">*</span></div>
-			<div class="input-div"><input type="date" name="answer" placeholder="Your answer"></div>
-		</div>
-        
-		<div>
-			<input class="btn" type="submit" name="Submit">
-		</div>
-
-		<div class="last-div">
-			<p class="never">Never submit passwords through Google Forms.</p>
-			<p class="term">This content is neither created nor endorsed by Google, Report Abuse - Term of Service - Private Policy</p>
-			<h2>Google Forms</h2>
-		</div>
-		
-
-
-
-
-
-	</div>
+      </form>
+    </div>
+  </div>
 
 </body>
 </html>
