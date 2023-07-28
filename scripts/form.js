@@ -9,6 +9,7 @@ function addQuestion() {
   }
 
   let questionElement = document.createElement("div");
+  questionElement.classList.add("question")
   questionElement.innerHTML = `<h2>Pregunta:</h2><p>${question}</p>`;
 
   if (questionType === "text") {

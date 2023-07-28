@@ -4,41 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UVM Forms</title>
-    <link rel="shortcut icon" href="media/uvmicon.png">
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/index.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+
     <header>
-        <h1>UVM Forms</h1>
-        <div class="user">
-        <p>¡Bienvenido, (usuario)!</p><i class='bx bx-user-circle'></i>
+        <div class="header">
+            <a href="/" class="logo">
+                <img src="resources/uvm.png" alt="Logo">
+                <p>UVM Forms</p>
+            </a>
+          
+          <div class="header-right">
+            <a href="#" id="inicio">Inicio</a>
+            <a href="#" id="formularios">Mis formularios</a>
+
+            <!-- <% if(user == '') { %>
+  
+                <a href="#">Ingresar</a>
+                <a href="#">Registrar</a>
+
+            <% } else { %>
+
+                <i class='bx bx-user-circle' id="profileIcon"></i> <p> <%- user %></p>
+                
+            <% } %> -->
+          </div>
         </div>
-    </header>
+      </header>
+
+
     <main>
         <div class="buttons">
-        <a href="createform.html"><button id="createButton" class="createButton"><i class='bx bx-plus' id="plusIcon"></i>Crear formulario</button></a>
         <a href=""><button id="logoutButton" class="logoutButton"><i class='bx bx-log-out' id="logoutIcon"></i>Cerrar sesión</button></a>
         </div>
         <p class="formsText">Tus formularios</p>
         <div class="forms">
-            <div class="cardForm">
-                <p class="formTitle">Titulo titulo titulo</p>
-                <p class="formDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-            </div>
-            <div class="cardForm">
-                <p class="formTitle">Titulo titulo titulo</p>
-                <p class="formDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-            </div>
-            <div class="cardForm">
-                <p class="formTitle">Titulo titulo titulo</p>
-                <p class="formDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-            </div>
-            <div class="cardForm">
-                <p class="formTitle">Titulo titulo titulo</p>
-                <p class="formDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-            </div>
+
+            <a class="cardFormNuevo" href="/formularios/crear" id="createButton"> 
+                <p class="formTitleNuevo"> Crear nuevo formulario</p>
+                <i class='bx bx-plus' id="plusIcon"></i>
+            </a>
+
+                    <div class="cardForm">
+                        <p class="formTitle">Tituloooooooooooo</p>
+                        <p class="formDescription">Descripcion generica siuuuuuu</p>
+                        <a href="/formularios/<%= formularios[i]._id %>" style="text-decoration: none; color: white; background-color: #88c426; padding: 10px; border-radius: 30px; margin-top: 20px;">Ver respuestas</a>
+                    </div>
+
+      
         </div>
     </main>
 

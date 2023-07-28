@@ -6,30 +6,50 @@
   <title>UVM Forms</title>
   <link rel="shortcut icon" href="media/uvmicon.png">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/createform.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-  <h1>Crear formulario</h1>
+  <header>
+      <div class="header">
+          <a href="/" class="logo">
+              <img src="resources/uvm.png" alt="Logo">
+              <p>UVM Forms</p>
+          </a>
+        
+        <div class="header-right">
+          <a href="#" id="inicio">Inicio</a>
+          <a href="#" id="formularios">Mis formularios</a>
+        </div>
+      </div>
+  </header>
+  <main>
+    <div class="createForm">
+      <h1>Crear formulario</h1>
 
-  <label for="question">Pregunta:</label>
-  <input type="text" id="question" placeholder="Escribe tu pregunta aquí">
+      <div class="createQuestion">
+        <label for="question">Pregunta:</label> 
+        <input type="text" id="question" placeholder="Escribe tu pregunta aquí">
 
-  <label for="questionType">Tipo de Pregunta:</label>
-  <select id="questionType">
-    <option value="text">Pregunta de texto libre</option>
-    <option value="select">Pregunta de selección</option>
-    <option value="options">Pregunta de opciones</option>
-  </select>
+        <label for="questionType">Tipo de Pregunta:</label>
+        <select id="questionType">
+          <option value="text">Pregunta de texto libre</option>
+          <option value="select">Pregunta de selección</option>
+          <option value="options">Pregunta de opciones</option>
+        </select>
 
-  <div id="optionsContainer" style="display: none;">
-    <label for="options">Opciones (separadas por coma):</label>
-    <input type="text" id="options" placeholder="Opción 1, Opción 2, Opción 3, ...">
-  </div>
+        <div id="optionsContainer" style="display: none;">
+          <label for="options">Opciones (separadas por coma):</label>
+          <input type="text" id="options" placeholder="Opción 1, Opción 2, Opción 3, ...">
+        </div>
 
-  <button onclick="addQuestion()">Añadir Pregunta</button>
-
-  <div id="questionsContainer"></div>
-
+        <button onclick="addQuestion()">Añadir Pregunta</button>
+      </div>
+      <div id="questionsContainer">
+        
+      </div>
+    </div>
+  </main>
   <script src="scripts/form.js"></script>
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
