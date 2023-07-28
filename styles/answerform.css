@@ -7,7 +7,7 @@ header {
     align-items: center;
     justify-content: space-between;
     background-color: #1d555b;
-    color: #dedede;
+    color: #efefef;
 }
 
 .user {
@@ -32,14 +32,14 @@ header {
     border-bottom: 2px solid #88C426;
     padding-bottom: 5px;
     margin-bottom: 5px;
-    color: #dedede;
+    color: #efefef;
 }
 
 .formDescription {
     text-align: center;
     font-size: 1.5rem;
     margin-bottom: 15px;
-    color: #dedede;
+    color: #efefef;
 }
 
 .questions {
@@ -51,7 +51,7 @@ header {
     background-color: #2c747c;
     padding: 15px;
     border-radius: 8px;
-    color: #ffffff;
+    color: #efefef;
     border: 2px solid #88C426;
 }
 
@@ -65,7 +65,7 @@ input[type="text"] {
     outline: none;
     border-radius: 5px;
     padding: 7px;
-    background-color: #dedede;
+    background-color: #efefef;
 }
 
 input[type="text"]::placeholder{
@@ -80,7 +80,7 @@ select {
     border-radius: 5px;
     color: #1d555b;
     cursor: pointer;
-    background-color: #dedede;
+    background-color: #efefef;
 }
 
 select option {
