@@ -17,7 +17,7 @@ header {
     font-size: 1.5rem;
 }
 
-.form {
+.answerForm {
     width: 50%;
     margin: 20px auto;
     padding: 20px;
@@ -26,7 +26,7 @@ header {
     color: #ffffff;
 }
 
-.form h2 {
+.answerForm h2 {
     text-align: center;
     font-size: 3rem;
     font-weight: bold;
@@ -95,4 +95,11 @@ input[type="radio"]{
 
 input[type="radio"]:checked {
     accent-color: #88C426;
-  }
+}
+
+.submit {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 0;
+    cursor: pointer;
+}
