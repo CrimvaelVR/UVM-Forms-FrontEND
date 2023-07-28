@@ -15,7 +15,7 @@ body {
     text-align: center;
     border-bottom: 2px solid black;
     padding-bottom: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .createQuestion {
@@ -32,7 +32,7 @@ body {
     font-weight: 500;
 }
 
-.createQuestion input[type="text"] {
+input[type="text"] {
     width: 30%;
     border: 3px solid #1d555b;
     outline: none;
@@ -83,7 +83,26 @@ select {
     text-align: center;
 }
 
-.createForm #questionsContainer button {
+.question {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
+.question h3 {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.createForm #questionsContainer button {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 0;
+    cursor: pointer;
+    background-color: #bcd4de;
+    color: #13373b;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 1px 1px 3px 0 #525252;
 }
 

@@ -1,4 +1,11 @@
 let questionCounter = 0; // Variable para contar el número de preguntas agregadas
+let radioQuestionsDiv; // Variable para almacenar el div donde se guardarán las preguntas tipo "radio"
+
+// Función para eliminar todos los botones de enviar existentes
+function removeSendButtons() {
+  const sendButtons = document.querySelectorAll(".sendButton");
+  sendButtons.forEach((button) => button.remove());
+}
 
 // Función para añadir una nueva pregunta al contenedor
 function addQuestion() {
@@ -12,7 +19,7 @@ function addQuestion() {
 
   let questionElement = document.createElement("div");
   questionElement.classList.add("question");
-  questionElement.innerHTML = `<h3>Pregunta:</h3><p>${question}</p>`;
+  questionElement.innerHTML = `<h3>Pregunta (${questionCounter + 1})</h3><p>${question}</p>`;
 
   if (questionType === "text") {
     questionElement.innerHTML += '<input type="text" placeholder="Respuesta">';
@@ -33,20 +40,25 @@ function addQuestion() {
   }
 
   document.getElementById("questionsContainer").appendChild(questionElement);
+
   questionCounter++;
 
-  // Mostrar el botón de enviar si hay al menos una pregunta
-  if (questionCounter === 1) {
+  // Eliminamos los botones de enviar existentes
+  removeSendButtons();
+
+  // Mostrar el botón de enviar solo si hay al menos una pregunta
+  if (questionCounter > 0) {
     const sendButton = document.createElement("button");
     sendButton.textContent = "Enviar";
+    sendButton.classList.add("sendButton"); // Agregamos una clase para identificar el botón de enviar
     sendButton.onclick = submitForm;
     document.getElementById("questionsContainer").appendChild(sendButton);
   }
 }
 
-// Función para enviar el formulario a la base de datos (implementación ficticia)
 function submitForm() {
-  alert("¡Formulario enviado!");
+  // Aquí puedes implementar la lógica para enviar el formulario
+  alert("Formulario enviado!");
 }
 
 // Mostrar u ocultar el campo de opciones dependiendo del tipo de pregunta seleccionada
