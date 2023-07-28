@@ -33,6 +33,10 @@ main {
     cursor: pointer;
 }
 
+.logoutButton{
+    cursor: pointer;
+}
+
 .formsText {
     margin: 20px 0;
     padding-top: 15px;
