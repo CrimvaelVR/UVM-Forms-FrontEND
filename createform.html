@@ -11,17 +11,21 @@
 </head>
 <body>
   <header>
-      <div class="header">
-          <a href="/" class="logo">
-              <img src="resources/uvm.png" alt="Logo">
-              <p>UVM Forms</p>
-          </a>
-        
-        <div class="header-right">
-          <a href="#" id="inicio">Inicio</a>
-          <a href="#" id="formularios">Mis formularios</a>
-        </div>
-      </div>
+    <div class="header">
+      <a href="/" class="logo">
+          <img src="resources/uvm.png" alt="Logo">
+          <p>UVM Forms</p>
+      </a>
+    
+    <div class="header-right">
+
+      <a href="#" id="inicio">Inicio</a>
+      <a href="#" id="formularios">Mis formularios</a>
+
+      <i class='bx bx-user-circle' id="profileIcon"></i> <p>Usuario</p>
+          
+    </div>
+  </div>
   </header>
   <main>
     <div class="createForm">
@@ -43,10 +47,10 @@
           <input type="text" id="options" placeholder="Opción 1, Opción 2, Opción 3, ...">
         </div>
 
-        <button onclick="addQuestion()">Añadir Pregunta</button>
+        <button class="addQuestion" onclick="addQuestion()">Añadir Pregunta</button>
       </div>
       <div id="questionsContainer">
-        
+        <h2>Vista previa</h2>
       </div>
     </div>
   </main>
