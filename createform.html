@@ -3,19 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formulario</title>
+  <title>UVM Forms</title>
+  <link rel="shortcut icon" href="">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/index.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-  <h1>Crea tu formulario</h1>
-  <div>
-    <label for="pregunta">Pregunta:</label>
-    <input type="text" id="pregunta" placeholder="Escribe tu pregunta">
-    <button onclick="agregarPregunta()">Agregar Pregunta</button>
-  </div>
-  <div id="preguntasContainer">
-    <!-- Aquí se mostrarán las preguntas agregadas -->
+  <h1>Crear formulario</h1>
+
+  <label for="question">Pregunta:</label>
+  <input type="text" id="question" placeholder="Escribe tu pregunta aquí">
+
+  <label for="questionType">Tipo de Pregunta:</label>
+  <select id="questionType">
+    <option value="text">Pregunta de texto libre</option>
+    <option value="select">Pregunta de selección</option>
+    <option value="options">Pregunta de opciones</option>
+  </select>
+
+  <div id="optionsContainer" style="display: none;">
+    <label for="options">Opciones (separadas por coma):</label>
+    <input type="text" id="options" placeholder="Opción 1, Opción 2, Opción 3, ...">
   </div>
 
+  <button onclick="addQuestion()">Añadir Pregunta</button>
+
+  <div id="questionsContainer"></div>
+
   <script src="scripts/form.js"></script>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
 </html>
