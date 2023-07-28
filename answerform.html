@@ -6,10 +6,46 @@
   <title>UVM Forms</title>
   <link rel="shortcut icon" href="">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/answerform.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+    <header>
+            <h1>UVM Forms</h1>
+            <div class="user">
+            <p>¡Bienvenido, (usuario)!</p><i class='bx bx-user-circle'></i>
+            </div>
+    </header>
+    <main>
+        <section>
+            <div class="form">
+                <h2>TITULO DEL FORMULARIO</h2>
+                <p class="formDescription">Descripcion del formulario hola hola hola hola hola hola hola</p>
+                <div class="questions">
+                    <p class="questionTitle">Pregunta 1</p>
+                    <input type="text" id="questionText" placeholder="Respuesta">
 
+                    <p class="questionTitle">Pregunta 1111</p>
+                    <input type="text" id="questionText" placeholder="Respuesta">
+
+                    <p class="questionTitle">Pregunta 2</p>
+                    <select id="questionSelect">
+                        <option value="">Selecciona una opción</option>
+                        <option value="1">Opcion 1</option>
+                        <option value="2">Opcion 2</option>
+                        <option value="3">Opcion 3</option>
+                    </select>
+
+                    <p class="questionTitle">Pregunta 3</p>
+                    <div class="radioOptions">
+                        <span class="option"><input type="radio" name="opciones" value="opcion1">Opción 1</span>
+                        <span class="option"><input type="radio" name="opciones" value="opcion2">Opción 2</span>
+                        <span class="option"><input type="radio" name="opciones" value="opcion3">Opción 3</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>

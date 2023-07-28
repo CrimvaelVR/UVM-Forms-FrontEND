@@ -1,0 +1,98 @@
+body {
+    font-family: Calibri;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #5C8D89;
+    color: white;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 1.5rem;
+}
+
+.form {
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #5C8D89;
+    color: #ffffff;
+}
+
+.form h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    border-bottom: 2px solid #355654;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.formDescription {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.questions {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #79b6b0;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.questionTitle {
+    font-size: 1.3rem;
+    color: #24403e;
+}
+
+input[type="text"] {
+    width: 30%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 7px;
+}
+
+select {
+    width: 30%;
+    border: none;
+    outline: none;
+    padding: 7px;
+    border-radius: 5px;
+    color: grey;
+    cursor: pointer;
+}
+
+select option {
+    color: black;
+}
+
+.radioOptions{
+    display: flex;
+    gap: 10px;
+}
+
+.radioOptions .option {
+    display: flex;
+    gap: 5px;
+}
+
+input[type="radio"]{
+    cursor: pointer;
+}
+
+input[type="radio"]:checked {
+    accent-color: #88C426;
+  }
