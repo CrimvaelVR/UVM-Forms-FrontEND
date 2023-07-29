@@ -94,6 +94,16 @@ select {
     font-weight: 500;
 }
 
+.questionOption {
+    display: flex;
+    gap: 15px;
+}
+
+.questionRadio {
+    display: flex;
+    gap: 5px;
+}
+
 .createForm #questionsContainer button {
     border: none;
     border-radius: 5px;

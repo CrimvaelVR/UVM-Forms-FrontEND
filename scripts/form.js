@@ -19,7 +19,7 @@ function addQuestion() {
 
   let questionElement = document.createElement("div");
   questionElement.classList.add("question");
-  questionElement.innerHTML = `<h3>Pregunta (${questionCounter + 1})</h3><p>${question}</p>`;
+  questionElement.innerHTML = `<h3>Pregunta ${questionCounter + 1}</h3><p>${question}</p>`;
 
   if (questionType === "text") {
     questionElement.innerHTML += '<input type="text" placeholder="Respuesta">';
@@ -34,9 +34,9 @@ function addQuestion() {
     const options = document.getElementById("options").value.split(",");
     let radioOptions = "";
     for (const option of options) {
-      radioOptions += `<input type="radio" name="radioOptions" value="${option.trim()}">${option.trim()}<br>`;
+      radioOptions += `<div class="questionRadio"><input type="radio" name="radioOptions" value="${option.trim()}">${option.trim()}</div>`;
     }
-    questionElement.innerHTML += radioOptions;
+    questionElement.innerHTML +=`<div class="questionOption">${radioOptions}</div>`;
   }
 
   document.getElementById("questionsContainer").appendChild(questionElement);
