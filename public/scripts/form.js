@@ -19,18 +19,20 @@ function addQuestion() {
 
   let questionElement = document.createElement("div");
   questionElement.classList.add("question");
-  questionElement.innerHTML = `<h3>Pregunta ${questionCounter + 1}</h3><p>${question}</p>`;
+  questionElement.innerHTML = `<input type="text" style="background: none; border: none; color:white" value="${question}">`;
 
   if (questionType === "text") {
     questionElement.innerHTML += '<input type="text" placeholder="Respuesta">';
-  } else if (questionType === "select") {
+
+  } else if (questionType === "options") {
     const options = document.getElementById("options").value.split(",");
     let selectOptions = "";
     for (const option of options) {
       selectOptions += `<option value="${option.trim()}">${option.trim()}</option>`;
     }
     questionElement.innerHTML += `<select>${selectOptions}</select>`;
-  } else if (questionType === "options") {
+    
+  } else if (questionType === "select") {
     const options = document.getElementById("options").value.split(",");
     let radioOptions = "";
     for (const option of options) {
@@ -48,13 +50,24 @@ function addQuestion() {
 
   // Mostrar el botón de enviar solo si hay al menos una pregunta
   if (questionCounter > 0) {
-    const sendButton = document.createElement("button");
-    sendButton.textContent = "Enviar";
+    const sendButton = document.createElement("input");
+    sendButton.type = "submit";
+    sendButton.value = "Enviar";
     sendButton.classList.add("sendButton"); // Agregamos una clase para identificar el botón de enviar
-    sendButton.onclick = submitForm;
+    sendButton.addEventListener("click", submitForm);
     document.getElementById("questionsContainer").appendChild(sendButton);
   }
 }
+
+
+function AddTitulo(){
+  const titulo = document.getElementById("titulo").value;
+  const descripcion = document.getElementById("descripcion").value;
+
+  
+}
+
+
 
 function submitForm() {
   // Aquí puedes implementar la lógica para enviar el formulario
