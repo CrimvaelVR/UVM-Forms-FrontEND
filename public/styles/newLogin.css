@@ -75,3 +75,11 @@ body {
 .backButton {
     color: #1d555b;
 }
+
+@media (max-width: 430px) {
+
+    #loginForm {
+        width: 250px;
+    }
+    
+}
