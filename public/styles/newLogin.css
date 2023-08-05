@@ -1,0 +1,77 @@
+body {
+    background-color: #1d555b;
+}
+
+.form {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#loginForm {
+    background-color: #fff;
+    width: 400px;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.form h2 {
+    margin-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.content input {
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #c2c2c2;
+    border-bottom-width: 2px;
+    padding: 10px;
+}
+
+.inputBox {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form input:focus {
+    border-color: #1d555b;
+}
+
+.button {
+    text-align: center;
+}
+
+.submitButton {
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    background-color: #1d555b;
+    cursor: pointer;
+    margin: 15px 0;
+}
+
+.forgotPass, .backButton {
+    text-decoration: none;
+}
+
+.forgotPass:hover, .backButton:hover {
+    text-decoration: underline;
+}
+
+.forgotPass {
+    color: #a2a2a2;
+}
+
+.backButton {
+    color: #1d555b;
+}
