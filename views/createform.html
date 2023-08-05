@@ -5,15 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>UVM Forms</title>
   <link rel="shortcut icon" href="media/uvmicon.png">
-  <link rel="stylesheet" href="styles/styles.css">
-  <link rel="stylesheet" href="styles/createform.css">
+  <link rel="stylesheet" href="../public/styles/styles.css">
+  <link rel="stylesheet" href="../public/styles/createform.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
   <header>
     <div class="header">
       <a href="/" class="logo">
-          <img src="resources/uvm.png" alt="Logo">
+          <img src="../public/resources/uvm.png" alt="Logo">
           <p>UVM Forms</p>
       </a>
     
@@ -31,30 +31,39 @@
     <div class="createForm">
       <h1>Crear formulario</h1>
 
-      <div class="createQuestion">
-        <label for="question">Pregunta</label> 
-        <input type="text" id="question" placeholder="Escribe tu pregunta aquí">
+      <form method="post" class="createQuestion1">
+        <label for="">Título del formulario:</label>
+        <input type="text" name="titulo" id="titulo">
+        <label for="">Descripción del formulario:</label>
+        <textarea type="text" name="descripcion" id="descripcion"> </textarea>
 
-        <label for="questionType">Tipo de Pregunta</label>
-        <select id="questionType">
-          <option value="text">Pregunta de texto libre</option>
-          <option value="select">Pregunta de selección</option>
-          <option value="options">Pregunta de opciones</option>
-        </select>
+        <div class="createQuestion" id="questionsContainer">
 
-        <div id="optionsContainer" style="display: none;">
-          <label for="options">Opciones (separadas por coma)</label>
-          <input type="text" id="options" placeholder="Opción 1, Opción 2, Opción 3, ...">
+          <div class="question">
+            <label>Pregunta</label> 
+            <input type="text" class="question-text" placeholder="Escribe tu pregunta aquí">
+          
+            <label>Tipo de Pregunta</label>
+            <select id="questionType">
+              <option value="text">Pregunta de texto libre</option>
+              <option value="select">Pregunta de selección</option>
+              <option value="options">Pregunta de opciones</option>
+            </select>
+          
+            <div class="options-container" id="options-container" style="display: none;"></div>
+          </div>
+          
         </div>
 
-        <button class="addQuestion" onclick="addQuestion()">Añadir Pregunta</button>
-      </div>
-      <div id="questionsContainer">
-        <h2>Vista previa</h2>
-      </div>
+
+      </form>
+
+
+      <button class="addQuestion" id="addQuestion">Añadir Pregunta</button>
+
     </div>
   </main>
-  <script src="scripts/form.js"></script>
+  <script src="../public/scripts/form.js"></script>
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
 </html>
