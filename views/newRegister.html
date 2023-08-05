@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UVM Forms</title>
+    <link rel="shortcut icon" href="media/uvmicon.png">
+    <link rel="stylesheet" href="/public/styles/styles.css">
+    <link rel="stylesheet" href="/public/styles/newRegister.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+
+      </header>
+    <main>
+        <div class="form">
+            <form id="registerForm">
+                <h2>Registro</h2>
+                <div class="content">
+                    <div class="inputBox">
+                        <label for="name">Nombre completo</label>
+                        <input type="text" id="name" placeholder="Ingrese su nombre" required>
+                    </div>
+                    <div class="inputBox">
+                        <label for="username">Usuario</label>
+                        <input type="text" id="username" placeholder="Ingrese su usuario" required>
+                    </div>
+                    <div class="inputBox">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Ingrese su email" required>
+                    </div>
+                    <div class="inputBox">
+                        <label for="number">Número telefónico</label>
+                        <input type="text" id="number" placeholder="Ingrese su número" required>
+                    </div>
+                    <div class="inputBox">
+                        <label for="password">Contraseña</label>
+                        <input type="password" id="password" placeholder="Ingrese su contraseña" required>
+                    </div>
+                    <div class="inputBox">
+                        <label for="confirmPassword">Confirme su contraseña</label>
+                        <input type="password" id="confirmPassword" placeholder="Confirme su contraseña" required>
+                    </div>
+                    <span class="genderTitle">Género</span>
+                    <div class="genders">
+                        
+                        <div class="genderRadio">
+                            <input type="radio" name="gender" id="male">
+                            <label for="male">Masculino</label>
+                        </div>
+                        <div class="genderRadio">
+                            <input type="radio" name="gender" id="female">
+                            <label for="female">Femenino</label>
+                        </div>
+                        <div class="genderRadio">
+                            <input type="radio" name="gender" id="notSpecified">
+                            <label for="notSpecified">Prefiero no decirlo</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="button">
+                    <input type="submit" class="submitButton">
+                </div>
+
+                <a class="backButton" href="landing.html">Regresar</a>
+            </form>
+        </div>
+    </main>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+</body>
+</html>
