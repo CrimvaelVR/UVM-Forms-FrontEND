@@ -2,13 +2,9 @@ main {
     padding: 20px 40px;
 }
 
-/*
-#809e3e verde culo
-#860000 rojo
-#1d555b verde header
-#88c426 verde maria
-
-*/
+main{
+    margin-top: 10ch;
+}
 
 .buttons {
     display: flex;
@@ -50,13 +46,14 @@ main {
     border-radius: 5px;
     height: 100%;
     width: 100%;
+    margin-bottom: 23vh;
 }
 
 .cardForm {
     background-color: #F4F9F4;
     padding: 20px;
     border-radius: 10px;
-    width: 24%;
+
     height: 250px;
     box-shadow: 1px 1px 5px 1px #686868;
     border-top: 10px solid #809e3e;
@@ -64,6 +61,8 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    flex-grow: 1;
+    flex-basis: 450px;
 }
 
 
@@ -82,6 +81,7 @@ main {
     align-items: center;
     transition: all 0.5s ease-in-out;
     justify-content: center;
+
     
 }
 
@@ -113,7 +113,8 @@ main {
     background-color: #F4F9F4;
     padding: 20px;
     border-radius: 10px;
-    width: 33.3%;
+    flex-grow: 1;
+    flex-basis: 666.6px;
     height: 250px;
     box-shadow: 1px 1px 5px 1px #686868;
     border-top: 10px solid #809e3e;
@@ -144,15 +145,21 @@ main {
     color: white;
 }
 
-.formBuscar{
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
 
-.formBuscar input{
-    border-radius: 20px;
-    text-indent: 10px;
-    height: 30px;
-    padding: 10px;
+
+@media screen and (max-width: 768px) {
+    .createForm {
+      width: 90%;
+    }
+    
+    .cardForm,
+    .cardFormNuevo,
+    .cardFormResp {
+      width: 100%;
+    }
+    
+    .forms {
+      margin-bottom: 10vh;
+    }
 }
+  
