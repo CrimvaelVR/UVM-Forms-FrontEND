@@ -24,6 +24,32 @@
       });
     });
 
+    // Obtiene el link de servicios
+    var serviciosLink = document.querySelector("#servicios");
+
+    // Añade un event click listener al link de servicios
+    serviciosLink.addEventListener("click", function() {
+      // Obtiene diferentes partes del HTML
+      var heroSection = document.querySelector(".hero");
+      var programasDestacadosSection = document.querySelector(".programas-destacados");
+      var noticiasSection = document.querySelector(".noticias");
+      var body = document.querySelector("body")
+
+
+      
+
+      // Añade la clase oculto a esos elementos para ocultarlos
+      body.classList.add("fondo-servicios");
+      heroSection.classList.add("oculto");
+      programasDestacadosSection.classList.add("oculto");
+      noticiasSection.classList.add("oculto");
+      // Añade la clase activo a los lista-estudiantes y a h1gestor
+      var h1gestor = document.querySelector(".titulo-gestor")
+      var listaEstudiantesSection = document.querySelector(".container");
+      listaEstudiantesSection.classList.add("activo");
+      h1gestor.classList.add("activo")
+
+    });
 
     //OBTIENE EL LINK DE IJNICIO
     var inicioLink = document.querySelector("#inicio");
